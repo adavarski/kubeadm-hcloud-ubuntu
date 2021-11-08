@@ -1,0 +1,11 @@
+.terraform.*
+.terraform/
+terraform.tfstate*
+terraform.tfvars
+terraform.tfplan
+.auto.tfvars
+.DS_Store
+secrets/
+tmp/
+registry.terraform.io/
+.env
