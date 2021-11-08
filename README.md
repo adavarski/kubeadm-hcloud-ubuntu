@@ -147,6 +147,16 @@ replicaset.apps/hello-kubernetes-7d8757d7c   1         1         0       11s
 <img src="pictures/kubeadm-1.20-load_balancer-ingress-hello.png" width="900">
 
 
+## Clean 
 
+Delete Volume and Load Balancer via hcloud cli or hcloud console UI.
+
+```
+$ terraform destroy 
+
+...
+Destroy complete! Resources: 21 destroyed.
+
+```
 
 
