@@ -1,4 +1,4 @@
-# Terraform Kubernetes on Hetzner Cloud using kubeadm
+# Kubernetes on Hetzner Cloud using terrafrom and kubeadm
 
 This repository helps us to setup an opionated Kubernetes Cluster with [kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/) on [Hetzner Cloud](https://www.hetzner.com/cloud).
 
