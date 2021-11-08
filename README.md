@@ -13,10 +13,6 @@ This repository helps us to setup an Kubernetes Cluster with [kubeadm](https://k
 - Hetzner cloud-controller-manager to set external node-ips, create loadbalancers and update private network routes
 - Hetzner CSI to use Hetzner volumes in Kubernetes
 
-## Inspired by
-
-- https://github.com/solidnerd/terraform-k8s-hcloud @solidnerd
-- https://github.com/jpsikorra/k8s-hetzner-test @jpsikorra
 
 ## Usage
 
