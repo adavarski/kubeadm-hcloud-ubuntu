@@ -1,6 +1,6 @@
 # Kubernetes on Hetzner Cloud using terrafrom and kubeadm
 
-This repository helps us to setup an opionated Kubernetes Cluster with [kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/) on [Hetzner Cloud](https://www.hetzner.com/cloud).
+This repository helps us to setup an Kubernetes Cluster with [kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/) on [Hetzner Cloud](https://www.hetzner.com/cloud).
 
 ## Components
 
@@ -19,8 +19,6 @@ This repository helps us to setup an opionated Kubernetes Cluster with [kubeadm]
 - https://github.com/jpsikorra/k8s-hetzner-test @jpsikorra
 
 ## Usage
-
-Copy `.env.example` to `.env` and update its values.
 
 ```
 $ terraform init
@@ -120,8 +118,7 @@ kube-system   statefulset.apps/hcloud-csi-controller   1/1     11m   csi-attache
 <img src="pictures/kubeadm-1.20-security-ssh-key.png" width="900">
 
 
-
-## hello app - creating Volume and Load Balancer @hcloud
+## hello app - creating Volume and Load Balancer @hcloud using hcloud CCM & CSI k8s add-ons
 
 ```
 $ KUBECONFIG=tmp/admin.conf kubectl apply -f hello/hello-kubernetes-default.yaml 
@@ -144,7 +141,6 @@ NAME                                         DESIRED   CURRENT   READY   AGE
 replicaset.apps/hello-kubernetes-7d8757d7c   1         1         0       11s
 
 ```
-
 
 <img src="pictures/kubeadm-1.20-load-balancer_hello.png" width="900">
 <img src="pictures/kubeadm-1.20-volumes-hello.png" width="900">
