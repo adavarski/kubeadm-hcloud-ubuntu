@@ -145,9 +145,12 @@ replicaset.apps/hello-kubernetes-7d8757d7c   1         1         0       11s
 
 ## Clean 
 
-Delete Volume and Load Balancer via hcloud cli or hcloud console UI.
 
 ```
+### Delete hello Volume and Load Balancer via kubectl (hcloud cli or hcloud console UI).
+
+$ KUBECONFIG=tmp/admin.conf kubectl delete -f hello/hello-kubernetes-default.yaml 
+
 $ terraform destroy 
 
 ...
