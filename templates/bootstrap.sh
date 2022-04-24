@@ -45,7 +45,7 @@ install_kube() {
 	echo "Installing kubelet & kubeadm version: ${kubernetes_version}"
 
 	cat > /etc/apt/sources.list.d/kubernetes.list <<-EOF
-	deb http://apt.kubernetes.io/ kubernetes-xenial main
+	deb https://packages.cloud.google.com/apt/ kubernetes-xenial main
 	EOF
 
 	cat > /etc/apt/preferences.d/kubelet <<-EOF
